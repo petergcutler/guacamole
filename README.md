@@ -27,3 +27,23 @@ Each homepage is a grid layout, containing between 1 and 4 cells.
 Each grid may contain between 1 and 5 interests
 * two columns; no column may have more than 3 interests
 
+
+#### organization
+
+tropes.io is based around organizational principles and usable interfaces motivated by our physiology, anatomy, and natural behaviors.
+
+Bookmarks and lists are fine places to organize large lists of information. tropes.io is all about how to present a realistic number of choices or tropes to the user at one time.
+
+Based on our rectangular desktop screens, we can adequately view about four panes at once. Anything more than that, and we risk a visual overload.
+
+Based on the way we group items (into ones, twos and threes), each pane will contain no more than five items, each sub-grouped into 1, 2, or 3 units.
+
+On desktop, we can view four panes at once (a space).
+On mobile, we can view one pane at a time, and swipe between panes.
+
+
+
+
+
+
+
