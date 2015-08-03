@@ -15,6 +15,7 @@ When we explore a large space without a goal in mind, we are susceptible to sugg
 
 The goal of "guacamole" is to remind you of your goals and strip away the visual cues that change your behavior. When you startup your browser, this distraction-free page will help you see your goals and act on them.
 
+early wireframe: https://drive.google.com/file/d/0B0neE8Kwm_gyeTJyaG9vMnVlZEk/view?usp=sharing
 
 #### supporting details
 
