@@ -17,6 +17,8 @@ The goal of "guacamole" is to remind you of your goals and strip away the visual
 
 early wireframe: https://drive.google.com/file/d/0B0neE8Kwm_gyeTJyaG9vMnVlZEk/view?usp=sharing
 
+early erd: https://drive.google.com/file/d/0B0neE8Kwm_gyejBWd2xfeG9xcms/view?usp=sharing
+
 #### supporting details
 
 Each homepage is a grid layout, containing between 1 and 4 cells.
