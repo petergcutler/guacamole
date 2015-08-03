@@ -19,6 +19,17 @@ early wireframe: https://drive.google.com/file/d/0B0neE8Kwm_gyeTJyaG9vMnVlZEk/vi
 
 early erd: https://drive.google.com/file/d/0B0neE8Kwm_gyejBWd2xfeG9xcms/view?usp=sharing
 
+#### user stories
+
+As a user, I want to be able to login to my private account.
+
+As a user, I want to be able to share the data I put into my account with others.
+
+As a user, I want to be able to create a custom homepage on tropes.io
+
+As a user, I want tropes to apply constraints to my homepage to make it more useable
+
+
 #### supporting details
 
 Each homepage is a grid layout, containing between 1 and 4 cells.
