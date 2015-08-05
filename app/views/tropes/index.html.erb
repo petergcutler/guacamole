@@ -1,7 +1,7 @@
-<h2>welcome <%= link_to "+", new_trope_path %></h2>
+<h2>index of tropes <%= link_to "+", new_trope_path %></h2>
 
 <ul>
-  <% @tropes.each do |post| %>
+  <% @tropes.each do |trope| %>
     <li>
       <%= link_to trope.title, trope %>
     </li>

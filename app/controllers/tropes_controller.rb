@@ -1,19 +1,42 @@
 class TropesController < ApplicationController
 
-  def index #homepage, essentially
+  def index
     @tropes = User.find(session[:user]["id"]).tropes
   end
 
   def new
+    @trope = Trope.new
   end
 
-
-
   def create
-    @trope = Trope.new(trope_params)
+    @user = User.find(session[:user]["id"])
+    @trope = @user.tropes.create!(trope_params)
 
-    @trope.save
-    redirect_to @trope
+    redirect_to trope_path (@trope)
+  end
+
+  def show
+    @trope = Trope.find(params[:id])
+    # @pane = @trope.panes
+    # @item = @pane.items
+  end
+
+  def edit
+    @trope = Trope.find(params[:id])
+  end
+
+  def update
+    @trope = Trope.find(params[:id])
+    @trope.update(trope_params)
+
+    redirect_to trope_path(@trope)
+  end
+
+  def destroy
+    @trope = Trope.find(params[:id])
+    @trope.destroy
+
+    redirect_to action: "index"
   end
 
   private

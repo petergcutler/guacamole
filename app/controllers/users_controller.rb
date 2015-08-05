@@ -41,8 +41,6 @@ class UsersController < ApplicationController
     redirect_to action: :sign_in
   end
 
-
-
   def sign_out
     flash[:notice] = "You're signed out!"
     reset_session

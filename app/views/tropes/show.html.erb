@@ -1,0 +1,23 @@
+<h2>This is trope: <%= @trope.title %> <a href="/tropes/<%= @trope.id %>/edit">edit</a></h2>
+
+<h3>Panes <%= link_to "+", new_trope_pane_path(@trope) %></h3>
+
+<ul>
+  <% @trope.panes.each do |pane| %>
+    <li>
+      <%= "#{pane.title}" %> <%= link_to 'edit', edit_trope_pane_path(@trope, pane) %>
+      <ul>
+        <li>
+          <%= link_to 'add item', new_pane_item_path(pane) %>
+        </li>
+        <% pane.items.each do |item| %>
+        <li>
+            <%= "#{item.title}" %> <%= link_to 'edit', edit_pane_item_path(pane, item) %>
+        </li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+</ul>
+
+<h4><%= link_to "back", tropes_path %></h4>
