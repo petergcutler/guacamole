@@ -1,6 +1,9 @@
-<h2>index of tropes <%= link_to "+", new_trope_path %></h2>
+<h2>your tropes</h2>
 
 <ul>
+  <li class="new-item">
+    <%= link_to 'click to create a new trope', new_trope_path %>
+  </li>
   <% @tropes.each do |trope| %>
     <li>
       <%= link_to trope.title, trope %>

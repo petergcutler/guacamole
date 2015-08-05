@@ -14,7 +14,7 @@ class ItemsController < ApplicationController
     @pane = Pane.find(params[:pane_id])
     @item = Item.create!(item_params.merge(pane: @pane))
 
-    redirect_to pane_path(@pane)
+    redirect_to tropes_path
   end
 
   def show
@@ -24,9 +24,7 @@ class ItemsController < ApplicationController
 
   def edit
     @pane = Pane.find(params[:pane_id])
-    puts @pane
     @item = Item.find(params[:id])
-    puts @item
   end
 
   def update
@@ -34,7 +32,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.update(item_params)
 
-    # redirect_to trope_panes_path(@trope, @pane)
+    redirect_to tropes_path
   end
 
   def destroy
@@ -42,7 +40,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.destroy
 
-    redirect_to pane_path(@pane)
+    redirect_to tropes_path
   end
 
 

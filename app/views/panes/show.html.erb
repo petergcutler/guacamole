@@ -1,1 +1,14 @@
-<h2>Show panes</h2>
+<h2>This is pane: <%= @pane.title %> <%= link_to "edit", edit_trope_pane_path(@trope, @pane)%> </h2>
+
+<ul>
+  <li class="new-item">
+    <%= link_to 'click to create a new item', new_pane_item_path(@pane, @item) %>
+  </li>
+  <% @pane.items.each do |item| %>
+    <li>
+      <%= "#{item.title}" %> <%= link_to "edit", pane_item_path(@pane, item) %>
+    </li>
+  <% end %>
+</ul>
+
+<h4><%= link_to "back to the trope", trope_path(@trope) %></h4>

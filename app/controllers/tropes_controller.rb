@@ -12,13 +12,11 @@ class TropesController < ApplicationController
     @user = User.find(session[:user]["id"])
     @trope = @user.tropes.create!(trope_params)
 
-    redirect_to trope_path (@trope)
+    redirect_to trope_path(@trope)
   end
 
   def show
     @trope = Trope.find(params[:id])
-    # @pane = @trope.panes
-    # @item = @pane.items
   end
 
   def edit

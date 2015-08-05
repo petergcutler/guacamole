@@ -1,6 +1,11 @@
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   margin: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
 }
 
 ul {
@@ -10,4 +15,8 @@ ul {
 a {
   text-decoration: none;
   color: #27ae60;
+}
+
+.new-item {
+  font-weight: 700;
 }
