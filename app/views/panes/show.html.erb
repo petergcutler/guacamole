@@ -6,7 +6,7 @@
   </li>
   <% @pane.items.each do |item| %>
     <li>
-      <%= "#{item.title}" %> <%= link_to "edit", pane_item_path(@pane, item) %>
+      <%= "#{item.title}" %> <%= link_to "edit", edit_pane_item_path(@pane, item) %>
     </li>
   <% end %>
 </ul>
