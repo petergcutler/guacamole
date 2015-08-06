@@ -1,10 +1,27 @@
-<h2>sign up</h2>
+<div class="form-container">
 
-<%= form_tag("/sign_up", method: "post") do %>
-  <input type="text" name="username" placeholder="username" class="sign-up-submit"/>
-  <input type="password" name="password" placeholder="password" class="sign-up-password1" />
-  <input type="password" name="password_confirmation" placeholder="password again" class="sign-up-password2" />
-  <input type="submit" value="sign up" class="sign-up"/>
-<% end %>
+  <h2>sign up</h2>
 
-<h4><%= link_to "sign in", "/sign_in" %></h4>
+  <%= form_tag("/sign_up", method: "post") do %>
+
+    <div class="form-group">
+      <input type="text" name="username" id="username" placeholder="username" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <input type="password" name="password" id="password" placeholder="password" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <input type="password" name="password_confirmation" placeholder="password again" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <input type="submit" value="sign up" class="btn btn-primary sign-button-1"/>
+    </div>
+
+  <% end %>
+
+  <h4><%= link_to "Go to sign in", "/sign_in" %></h4>
+
+</div>

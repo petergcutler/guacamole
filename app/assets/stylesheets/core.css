@@ -72,23 +72,23 @@ html, body {
   height: 100%;
 }
 
-body {
+/*body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-}
+}*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  /*font-weight: 300;*/
   margin-top: 0;
 }
 
-ul {
+/*ul {
   list-style-type: none;
-}
+}*/
 
 a {
   text-decoration: none;
-  color: #27ae60;
+  /*color: #27ae60;*/
 }
 
 .new-item {
@@ -132,7 +132,7 @@ a {
 
 
 .container .solo {
-  color: cyan;
+  /*color: cyan;*/
 	display: flex;
   flex-basis: calc(100% - 2.5em);
   justify-content: center;
@@ -147,7 +147,7 @@ a {
 }
 
 .solo:nth-child(1) {
-  background-color: cyan;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
@@ -155,7 +155,7 @@ a {
 
 
 .container .duo {
-  color: magenta;
+  /*color: magenta;*/
 	display: flex;
 	flex-basis: calc(50% - 2.5em);
 	justify-content: center;
@@ -170,13 +170,13 @@ a {
 }
 
 .duo:nth-child(1) {
-  background-color: cyan;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
 
 .duo:nth-child(2) {
-  background-color: magenta;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
@@ -188,7 +188,7 @@ a {
 	flex-basis: calc(33% - 2.5em);
 	justify-content: center;
 	flex-direction: row;
-  color: yellow;
+  /*color: yellow;*/
 	margin: 1em;
 }
 
@@ -199,19 +199,19 @@ a {
 }
 
 .trio:nth-child(1) {
-  background-color: cyan;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
 
 .trio:nth-child(2) {
-  background-color: magenta;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
 
 .trio:nth-child(3) {
-  background-color: yellow;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
@@ -219,7 +219,7 @@ a {
 
 
 .container .quatro {
-  color: darkgray;
+  /*color: darkgray;*/
   display: flex;
 	flex-basis: calc(50% - 2.5em);
   justify-content: center;
@@ -234,25 +234,25 @@ a {
 }
 
 .quatro:nth-child(1) {
-  background-color: cyan;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
 
 .quatro:nth-child(2) {
-  background-color: magenta;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
 
 .quatro:nth-child(3) {
-  background-color: yellow;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
 
 .quatro:nth-child(4) {
-  background-color: darkgray;
+  background-color: #F7F7F7;
   justify-content: center;
   flex-direction: row;
 }
