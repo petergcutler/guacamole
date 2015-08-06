@@ -1,7 +1,12 @@
-<h2>edit item</h2>
+<div class="tropedex-container center-block panel panel-default">
+
+
+<h4>edit item</h4>
 
 <%= render 'form' %>
 
 <%= link_to 'delete', pane_item_path(@pane, @item), method: :delete, class: 'delete' %>
 
 <h4><%= link_to "back", tropes_path %></h4>
+
+</div>

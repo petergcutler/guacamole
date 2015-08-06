@@ -25,14 +25,13 @@
 
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
 
     </div>
   </div>
 </div>
 
-<!-- <h3>The count is: <%= @num_panes %> </h3> -->
+<!-- <h4>The count is: <%= @num_panes %> </h4> -->
 
 
 
@@ -47,17 +46,11 @@
             <%= link_to "#{pane.title}", trope_pane_path(@trope, pane) %>
           </li>
 
-          <li class="new-item">
-            <%= link_to 'add item', new_pane_item_path(pane) %>
-          </li>
-
           <% pane.items.each do |item| %>
-          <li>
-              <%= "#{item.title}" %> <%= link_to 'edit', edit_pane_item_path(pane, item) %>
+          <li class="main-items">
+              <%= link_to "#{item.title}", "#{item.url}" %>
           </li>
           <% end %>
-          <button type="button" id="foo-remove" class="btn pull-right btn-primary btn-fab btn-raised mdi-action-grade set-button" data-toggle="modal" data-target="#myModal">
-          </button>
         </ul>
       </div>
 
@@ -69,17 +62,11 @@
             <%= link_to "#{pane.title}", trope_pane_path(@trope, pane) %>
           </li>
 
-          <li class="new-item">
-            <%= link_to 'add item', new_pane_item_path(pane) %>
-          </li>
-
           <% pane.items.each do |item| %>
-          <li>
-              <%= "#{item.title}" %> <%= link_to 'edit', edit_pane_item_path(pane, item) %>
+          <li class="main-items">
+              <%= link_to "#{item.title}", "#{item.url}" %>
           </li>
           <% end %>
-          <button type="button" id="foo-remove" class="btn pull-right btn-primary btn-fab btn-raised mdi-action-grade set-button" data-toggle="modal" data-target="#myModal">
-          </button>
         </ul>
       </div>
 
@@ -91,17 +78,11 @@
             <%= link_to "#{pane.title}", trope_pane_path(@trope, pane) %>
           </li>
 
-          <li class="new-item">
-            <%= link_to 'add item', new_pane_item_path(pane) %>
-          </li>
-
           <% pane.items.each do |item| %>
-          <li>
-              <%= "#{item.title}" %> <%= link_to 'edit', edit_pane_item_path(pane, item) %>
+          <li class="main-items">
+              <%= link_to "#{item.title}", "#{item.url}" %>
           </li>
           <% end %>
-          <button type="button" id="foo-remove" class="btn pull-right btn-primary btn-fab btn-raised mdi-action-grade set-button" data-toggle="modal" data-target="#myModal">
-          </button>
         </ul>
       </div>
 
@@ -113,17 +94,11 @@
             <%= link_to "#{pane.title}", trope_pane_path(@trope, pane) %>
           </li>
 
-          <li class="new-item">
-            <%= link_to 'add item', new_pane_item_path(pane) %>
-          </li>
-
           <% pane.items.each do |item| %>
-          <li>
-              <%= "#{item.title}" %> <%= link_to 'edit', edit_pane_item_path(pane, item) %>
+          <li class="main-items">
+              <%= link_to "#{item.title}", "#{item.url}" %>
           </li>
           <% end %>
-          <button type="button" id="foo-remove" class="btn pull-right btn-primary btn-fab btn-raised mdi-action-grade set-button" data-toggle="modal" data-target="#myModal">
-          </button>
         </ul>
       </div>
 
@@ -131,3 +106,6 @@
 
   <% end %>
 </div>
+
+<button type="button" id="foo-remove" class="btn pull-right btn-primary btn-fab btn-raised mdi-action-grade set-button" data-toggle="modal" data-target="#myModal">
+</button>

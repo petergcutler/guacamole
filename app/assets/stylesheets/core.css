@@ -76,23 +76,8 @@ html, body {
 	background-color: #f1f1f1;
 }
 
-/*body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}*/
-
-h1, h2, h3, h4, h5, h6 {
-  /*font-weight: 300;*/
-  margin-top: 0;
-}
-
-/*ul {
-  list-style-type: none;
-}*/
-
 a {
   text-decoration: none;
-  /*color: #27ae60;*/
 }
 
 .new-item {
@@ -125,6 +110,10 @@ a {
 	position: fixed;
 	bottom: .5em;
 	right: .5em;
+}
+
+.main-items {
+	font-size: 1.4em;
 }
 
 
