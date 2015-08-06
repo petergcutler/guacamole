@@ -17,6 +17,7 @@ class TropesController < ApplicationController
 
   def show
     @trope = Trope.find(params[:id])
+    @num_panes = @trope.panes.count
   end
 
   def edit

@@ -14,7 +14,8 @@ class ItemsController < ApplicationController
     @pane = Pane.find(params[:pane_id])
     @item = Item.create!(item_params.merge(pane: @pane))
 
-    redirect_to tropes_path
+    redirect_to trope_pane_path(@pane.trope, @pane)
+
   end
 
   def show

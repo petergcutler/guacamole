@@ -1,6 +1,22 @@
-<h2>sign in</h2>
-<%= form_tag("/sign_in", method: "post") do %>
-  <input type="text" name="username" placeholder="username" />
-  <input type="password" name="password" placeholder="password" />
-  <input type="submit" value="sign in" />
-<% end %>
+<div class="form-container">
+
+  <h2>sign in</h2>
+
+  <%= form_tag("/sign_in", method: "post") do %>
+
+    <div class="form-group">
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" class="form-control" />
+
+      <input class="sign-button-1" type="submit" value="Login" />
+      <input class="sign-button-1" type="button" value="Cancel" />
+    </div>
+
+  <% end %>
+</div>
