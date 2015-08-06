@@ -72,6 +72,10 @@ html, body {
   height: 100%;
 }
 
+.peters-override {
+	background-color: #f1f1f1;
+}
+
 /*body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -96,8 +100,20 @@ a {
 }
 
 .form-container {
-	width: 50%;
-	margin: 0 auto;
+	width: 40%;
+	padding: 2em 4em;
+	position: absolute;
+	  top: 42%;
+	  left:50%;
+	  transform: translate(-50%,-50%);
+}
+
+.tropedex-container {
+	padding: 2em 4em;
+	position: absolute;
+		top: 42%;
+		left:50%;
+		transform: translate(-50%,-50%);
 }
 
 .sign-button-1 {
@@ -105,33 +121,31 @@ a {
 	margin-right: .5em;
 }
 
-.set-button {
-	position: absolute;
-	z-index: 10;
-	bottom: 0;
-	right: 0;
+.set-button, #foo-remove {
+	position: fixed;
+	bottom: .5em;
+	right: .5em;
 }
-
 
 
 /* -----------------------------------*/
 /* ---           PANES             ---*/
 /* -----------------------------------*/
 
-.container {
+.tropecontainer {
   height: 100%;
 	width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-	margin: 0 auto;
-	position: relative;
+	/*margin: 0 1em;*/
+	/*position: relative;*/
 	z-index: 0;
 }
 
 
 
-.container .solo {
+.tropecontainer .solo {
   /*color: cyan;*/
 	display: flex;
   flex-basis: calc(100% - 2.5em);
@@ -147,14 +161,14 @@ a {
 }
 
 .solo:nth-child(1) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
 }
 
 
 
-.container .duo {
+.tropecontainer .duo {
   /*color: magenta;*/
 	display: flex;
 	flex-basis: calc(50% - 2.5em);
@@ -170,26 +184,26 @@ a {
 }
 
 .duo:nth-child(1) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
 }
 
 .duo:nth-child(2) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
 }
 
 
 
-.container .trio {
+.tropecontainer .trio {
 	display: flex;
-	flex-basis: calc(33% - 2.5em);
+	flex-basis: calc(33% - 1.5em);
 	justify-content: center;
 	flex-direction: row;
   /*color: yellow;*/
-	margin: 1em;
+	margin: .7em;
 }
 
 .trio ul {
@@ -199,32 +213,32 @@ a {
 }
 
 .trio:nth-child(1) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
 }
 
 .trio:nth-child(2) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
 }
 
 .trio:nth-child(3) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
 }
 
 
 
-.container .quatro {
+.tropecontainer .quatro {
   /*color: darkgray;*/
   display: flex;
-	flex-basis: calc(50% - 2.5em);
+	flex-basis: calc(50% - 1.5em);
   justify-content: center;
 	flex-direction: row;
-	margin: 1em;
+	margin: .5em;
 }
 
 .quatro ul {
@@ -234,25 +248,37 @@ a {
 }
 
 .quatro:nth-child(1) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
 }
 
 .quatro:nth-child(2) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
 }
 
 .quatro:nth-child(3) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
 }
 
 .quatro:nth-child(4) {
-  background-color: #F7F7F7;
+  /*background-color: #F7F7F7;*/
   justify-content: center;
   flex-direction: row;
+}
+
+.duo:nth-child(-n+1) button {
+	display: none;
+}
+
+.trio:nth-child(-n+2) button {
+	display: none;
+}
+
+.quatro:nth-child(-n+3) button {
+	display: none;
 }

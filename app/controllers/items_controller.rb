@@ -33,7 +33,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.update(item_params)
 
-    redirect_to tropes_path
+    redirect_to trope_pane_path(@pane.trope, @pane)
   end
 
   def destroy
@@ -41,7 +41,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.destroy
 
-    redirect_to tropes_path
+    redirect_to trope_pane_path(@pane.trope, @pane)
   end
 
 

@@ -1,8 +1,5 @@
-
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg set-button" data-toggle="modal" data-target="#myModal">
-  settings
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -39,7 +36,7 @@
 
 
 
-<div class="container">
+<div class="tropecontainer">
   <% @trope.panes.each do |pane| %>
 
     <% if @num_panes == 1 %>
@@ -59,7 +56,8 @@
               <%= "#{item.title}" %> <%= link_to 'edit', edit_pane_item_path(pane, item) %>
           </li>
           <% end %>
-
+          <button type="button" id="foo-remove" class="btn pull-right btn-primary btn-fab btn-raised mdi-action-grade set-button" data-toggle="modal" data-target="#myModal">
+          </button>
         </ul>
       </div>
 
@@ -80,7 +78,8 @@
               <%= "#{item.title}" %> <%= link_to 'edit', edit_pane_item_path(pane, item) %>
           </li>
           <% end %>
-
+          <button type="button" id="foo-remove" class="btn pull-right btn-primary btn-fab btn-raised mdi-action-grade set-button" data-toggle="modal" data-target="#myModal">
+          </button>
         </ul>
       </div>
 
@@ -101,7 +100,8 @@
               <%= "#{item.title}" %> <%= link_to 'edit', edit_pane_item_path(pane, item) %>
           </li>
           <% end %>
-
+          <button type="button" id="foo-remove" class="btn pull-right btn-primary btn-fab btn-raised mdi-action-grade set-button" data-toggle="modal" data-target="#myModal">
+          </button>
         </ul>
       </div>
 
@@ -122,8 +122,11 @@
               <%= "#{item.title}" %> <%= link_to 'edit', edit_pane_item_path(pane, item) %>
           </li>
           <% end %>
+          <button type="button" id="foo-remove" class="btn pull-right btn-primary btn-fab btn-raised mdi-action-grade set-button" data-toggle="modal" data-target="#myModal">
+          </button>
         </ul>
       </div>
+
     <% end %>
 
   <% end %>

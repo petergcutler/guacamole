@@ -1,12 +1,16 @@
-<h4>your tropes</h4>
+<div class="tropedex-container center-block panel panel-default">
 
-<ul>
-  <li class="new-item">
-    <%= link_to 'click to create a new trope', new_trope_path %>
-  </li>
-  <% @tropes.each do |trope| %>
-    <li>
-      <%= link_to trope.title, trope %>
+  <h2>your tropes</h2>
+
+  <ul>
+    <li class="new-item">
+      <%= link_to 'click to create a new trope', new_trope_path %>
     </li>
-  <% end %>
-</ul>
+    <% @tropes.each do |trope| %>
+      <li>
+        <%= link_to trope.title, trope %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>

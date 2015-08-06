@@ -38,7 +38,7 @@ class UsersController < ApplicationController
     session[:user] = @user
     end
     flash[:notice] = message
-    redirect_to action: :sign_in
+    redirect_to "/"
   end
 
   def sign_out
